@@ -8,10 +8,9 @@
 
 # /classes
 #   id: uuid
-#   start_date: date
-#   end_date: date ?
-#   student_id: uuid
-#   section_id: uuid
+#   name: String
+#   default_grade_level: int
+#   active: bool
 
 # /faculty
 #   id: uuid
@@ -32,29 +31,24 @@
 #   last_name: String
 #   email: String
 
-# /people
-#   id: uuid
-#   first_name: String
-#   last_name: String
-#   email: String
-
 # /periods
 #   id: uuid
-#   first_name: String
-#   last_name: String
-#   email: String
+#   block_name: String
+#   days: String (mtwrfsn)
+#   start_time: time
+#   end_time: time
 
 # /schools
-#   id: uuid
-#   first_name: String
-#   last_name: String
-#   email: String
+#   name: String
+#   grade_low: int
+#   grade_high: int
 
 # /sections
 #   id: uuid
-#   first_name: String
-#   last_name: String
-#   email: String
+#   class_id: uuid
+#   number: int
+#   name: string
+#   term_id: uuid
 
 # /students
 #   id: uuid
@@ -80,7 +74,7 @@
 #   name: String
 #   start_date: date
 #   end_date: date
-#   parent_term: uuid
+#   parent_term_id: uuid
 
 #############################################
 ################# /SCHEMA ###################
