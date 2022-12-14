@@ -55,6 +55,7 @@
 #   first_name: String
 #   last_name: String
 #   email: String
+#   school_id: uuid
 
 # /students/relationships/<student_id>
 #   id: uuid
