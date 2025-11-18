@@ -9,7 +9,7 @@
 ################# INT RUN ###################
 #############################################
 
-# schools: 3 synced successfully
+# schools: 3 synced successfully; 1 errored
 #   name: My school
 #   id: school_1
 #   grade_low: 9
