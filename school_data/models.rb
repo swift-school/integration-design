@@ -74,3 +74,4 @@
 #   id: uuid
 #   external_id: string
 #   source: string
+#   student_id: uuid
