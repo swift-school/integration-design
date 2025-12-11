@@ -5,7 +5,7 @@
 #############################################
 
 # Below are the schemas of the database models at August Schools for storing a school's data.
-# August Schools pulls this data from an API that the school provides to us.
+# August Schools pulls this data nightly from an API that the school provides to us.
 #     - The API provides an ID for each piece of data it returns, and that's what we store in the id field
 
 # students
