@@ -93,39 +93,3 @@
 #############################################
 ################# /SCHEMA ###################
 #############################################
-
-class SchoolDataStorage
-  class Client
-    sig { params(endpoint: String).returns(T::Array[Hash]) }
-    def get_many(endpoint); end
-  end
-
-  ENDPOINTS = [
-    { name: 'classes' },
-    { name: 'faculty' },
-    { name: 'faculty_enrollments' },
-    { name: 'guardians' },
-    { name: 'periods' },
-    { name: 'schools' },
-    { name: 'sections' },
-    { name: 'students' },
-    { name: 'student_relationships'},
-    { name: 'student_enrollments'},
-    { name: 'terms' }
-  ].freeze
-
-  # assume this method gets called
-  def process(target_node: nil)
-    # TODO: add some stuff in here
-    puts 'help me!'
-
-    # figure out which endpoints we should ingest
-  end
-
-  # private
-  sig { returns(Client) }
-  def client; end
-end
-
-# rubocop:enable Style/Documentation
-# rubocop:enable Lint/UnusedMethodArgument
