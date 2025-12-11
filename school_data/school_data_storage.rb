@@ -49,6 +49,7 @@
 #   number: int
 #   name: string
 #   term_id: uuid
+#   primary_teacher: uuid
 
 # /students
 #   id: uuid
@@ -56,6 +57,11 @@
 #   last_name: String
 #   email: String
 #   school_id: uuid
+#   relationships:
+#     - id: uuid
+#       person_id: uuid
+#       student_id: uuid
+#       relationship: String
 
 # /students/relationships/<student_id>
 #   id: uuid
@@ -63,7 +69,14 @@
 #   student_id: uuid
 #   relationship: String
 
-# /students/enrollments/<student_id>
+# /classes/enrollments/<student_id>
+#   id: uuid
+#   start_date: date
+#   end_date: date ?
+#   student_id: uuid
+#   section_id: uuid
+
+# /classes/enrollments/<class_id>
 #   id: uuid
 #   start_date: date
 #   end_date: date ?
