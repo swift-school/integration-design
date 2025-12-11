@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 #############################################
-################## SCHEMA ###################
+################## MODELS ###################
 #############################################
 
-# can assume that the "ID" here matches whatever source system it was coming from
+# Below are the schemas of the database models at August Schools for storing a school's data.
+# August Schools pulls this data from an API that the school provides to us.
+#     - The API provides an ID for each piece of data it returns, and that's what we store in the `id` field
 
 # students
 #   id: uuid
