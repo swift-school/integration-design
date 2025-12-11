@@ -4,8 +4,8 @@
 ################## MODELS ###################
 #############################################
 
-# Below are the schemas of the database models at August Schools for storing a school's data.
-# August Schools pulls this data nightly from an API that the school provides to us.
+# Below are the schemas of the database models at August Schools for storing a school district's data.
+# August Schools pulls this data nightly from an API that the school district provides to us.
 #     - The API provides an ID for each piece of data it returns, and that's what we store in the id field
 
 # students
@@ -16,13 +16,13 @@
 #   school_id: uuid
 #   grade_id: uuid
 
-# persons -- faculty and parents
+# persons (all people who are not students, such as faculty or parents)
 #   id: uuid
 #   first_name: String
 #   last_name: String
 #   email: String
 
-# relationships
+# relationships (represents a connection between a person and student)
 #   id: uuid
 #   person_id: uuid
 #   student_id: uuid
@@ -43,7 +43,7 @@
 #   default_grade_level: int
 #   active: bool
 
-# sections
+# sections (represents any group of people such as a class or a sports team)
 #   id: uuid
 #   class_id: uuid
 #   number: int
@@ -65,11 +65,7 @@
 #   section_id: uuid
 
 #############################################
-################## SCHEMA ###################
-#############################################
-
-#############################################
-############### SCHEMA (ext) ################
+############### NEXT SECTION ################
 #############################################
 
 # external_references
